@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+     {{>header}}
+
+		
+	</head>
+	<body>
+		<div class="container-fluid main-div ">
+			<div class="row register">
+				<div class="col-md-3  register-left">
+					<h3>Welcome</h3>
+					<p>Please fill all the details carefully. This form can chage your life.</p>
+					<a href="login" class="px-5 py-2" style="font-size: 2rem; " > Login </a>  <br />
+				</div>
+				<div class="col-md-9  register-right">
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelldby="home-tab">
+							<h3 class="text-center mb-5">Apply for web Developers</h3>
+							<form action="/register"  method="POST" >
+								<div class="row register-form">
+									<div class="col-lg-6 col-11  mx-auto ">
+										<div class="form-group form_css">
+											   <input type="text" class="form-control" name="name" required placeholder="Enter your user name">
+											
+										</div>
+										<div class="form-group form_css">
+											
+											<input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Enter email">
+										</div>
+										<div class="form-group form_css">
+											
+											<input type="password" class="form-control" name="password" id="password" aria-describedby="emailHelp"  placeholder="Create password">
+										</div>
+										
+										
+									</div>
+
+									<div class="col-lg-6 col-11 ">
+										<div class="form-group form_css">
+											
+											<input type="password" class="form-control" name="confirmpassword" id="cpassword" aria-describedby="emailHelp"  placeholder="Confirm Password">
+										</div>
+										<div class="mx-5 px-5  d-flex align-items-center">
+											     
+												<input type="radio" class="mx-2" name="gender" value="male">
+												 <span class="mx-1"> male</span>
+											   <input type="radio" class="mx-2"  name="gender" value="female">
+											    <span class="mx-1"> female</span>
+											
+										</div>
+										<div class="form-group form_css">
+											
+											<input type="number" class="form-control" name="phone" id="phone" aria-describedby="emailHelp"  placeholder="Enter your phone number">
+										</div>
+										
+										<div class="form-group form_css right-side ">
+											
+											<input type="submit" class="px-4 btn center  " name="submit"  aria-describedby="emailHelp" value="register"  placeholder="Enter Your qulification">
+										</div>
+										
+										
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		{{>scripts}}
+	</body>
+</html>
+
